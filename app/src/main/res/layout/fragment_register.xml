@@ -10,7 +10,18 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:id="@+id/toolbarRegister"/>
+        android:id="@+id/toolbarRegister">
+
+        <!--Icon Save-->
+        <ImageView
+            android:id="@+id/imvSave"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_action_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
 
     <!--Content-->
     <ScrollView
@@ -39,6 +50,7 @@
 
                 <!--EditText-->
                 <EditText
+                    android:id="@+id/edtName"
                     android:inputType="text"
                     android:hint="@string/name"
                     android:layout_width="match_parent"
@@ -51,12 +63,14 @@
             <!--Gender-->
              <!--การเลือกอย่างใด อย่างหนึ่ง ต้องมี RadioGroup ครอบเสมอ-->
             <RadioGroup
+                android:id="@+id/ragGender"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <!--Male-->
                 <RadioButton
+                    android:id="@+id/radMale"
                     android:layout_weight="1"
                     android:text="Male"
                     android:layout_width="match_parent"
@@ -64,6 +78,7 @@
 
                 <!--Female-->
                 <RadioButton
+                    android:id="@+id/radFemale"
                     android:layout_weight="1"
                     android:text="Female"
                     android:layout_width="match_parent"
@@ -86,8 +101,9 @@
 
                 <!--EditText-->
                 <EditText
+                    android:id="@+id/edtUser"
                     android:inputType="text"
-                    android:hint="@string/password"
+                    android:hint="@string/user"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -109,6 +125,7 @@
 
                 <!--EditText-->
                 <EditText
+                    android:id="@+id/edtPassword"
                     android:inputType="text"
                     android:hint="@string/password"
                     android:layout_width="match_parent"
