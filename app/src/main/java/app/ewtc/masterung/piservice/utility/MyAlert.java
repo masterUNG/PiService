@@ -24,9 +24,9 @@ public class MyAlert {
 //        You Inherited Object From Class
 //        สร้าง ออฟเจ็ค ที่สามารถสร้างป้อปอัพ
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle(strTitle);
         builder.setCancelable(false);
         builder.setIcon(R.drawable.ic_action_alert);
-        builder.setTitle(strTitle);
         builder.setMessage(strMessage);
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
